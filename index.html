@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리버풀 승부 예측</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">리버풀의 전 심장 클롭이 말한다. 리버풀은...</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "승리.",
+                "패배.",
+                "무승부.",
+                "승리.",
+                "패배.",
+                "무승부.",
+                "승리.",
+                "패배.",
+                "무승부.",
+                "승리.",
+                "패배.",
+                "무승부.",
+                "무승부.",
+                "무승부.",
+                "승리.",
+                "패배.",
+                "무승부.",
+                "승리.",
+                "무승부.",
+                "패배.",
+                "승리.",
+                "무승부",
+                "승리.",
+                "패배.",
+                "승리.",
+                "승리.",
+                "승리.",
+                "승리.",
+                "승리.",
+                "승리.",
+                "패배.",
+                "승리.",
+                "이기겠지..?",
+                "불안한데.",
+                "누녜스 골 승리.",
+                "키에사 골 승리.",
+                "승리.",
+                "패배."
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        
+    </script>
+</body>
+</html>
